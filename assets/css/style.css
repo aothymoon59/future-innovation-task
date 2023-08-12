@@ -1,0 +1,298 @@
+:root {
+    --brandColor: #4C73E9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Eina Bold';
+    src: url('../fonts/Eina_03_Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Eina SemiBold';
+    src: url('../fonts/Eina_03_SemiBold.ttf');
+}
+
+body {
+    font-family: 'Eina SemiBold';
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Eina Bold';
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
+
+
+
+.custom-container {
+    width: 100%;
+    max-width: 1370px;
+    margin: 0 auto;
+
+}
+
+.nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 50;
+}
+
+.login-btn {
+    background-color: #4C73E9;
+    border: 0;
+    padding: 15px 20.566px;
+    gap: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.polygon {
+    position: relative;
+}
+
+.section-padding {
+    padding: 80px 20px;
+}
+
+.banner-section {
+    background-image: url('/assets/images/banner-bg.png');
+    background-position: center left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.banner-left,
+.banner-right {
+    width: 50%;
+}
+
+.banner-img {
+    max-width: 90% !important;
+    margin-left: auto;
+}
+
+.banner-text {
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 20px;
+}
+
+.banner-heading {
+    font-size: 63px;
+    line-height: 73px;
+}
+
+.banner-text-blue {
+    color: var(--brandColor);
+}
+
+.owl-carousel .owl-item {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.desktop-code {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    height: 210px;
+}
+
+
+.single-dots-item {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.dot-content-wrap {
+    position: absolute;
+    top: 36%;
+    left: 5%;
+    right: 10.5%;
+    z-index: 2;
+}
+
+/* .owl-carousel .owl-item img.dot-icon {
+    max-width: 40px !important;
+    margin: 0 auto;
+} */
+
+.activeState {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s linear;
+}
+
+.desktop-code .active .activeState {
+    opacity: 1;
+    visibility: visible;
+}
+
+.desktop-code .default {
+    transition: opacity .1s linear;
+}
+
+.desktop-code .active .default {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.dot-title {
+    margin-top: 5px;
+}
+
+.graphics-title {
+    color: #4C73E9;
+}
+
+.webdesign-title {
+    color: #FC7A16;
+}
+
+.webdev-title {
+    color: #80C993;
+}
+
+.digital-title {
+    color: #7879F1;
+}
+
+.uiux-title {
+    color: #80C993;
+}
+
+
+#mobile-dots {
+    display: none
+}
+
+#mobile-dots .dot-icon {
+    max-width: 30px;
+    margin: 0 auto;
+}
+
+#mobile-dots .dot-title {
+    font-size: 14px;
+}
+
+
+/* medium device responsive */
+@media only screen and (max-width: 1024px) {
+    .owl-carousel .owl-item {
+        height: 80vh;
+    }
+
+    .desktop-code {
+        display: none;
+    }
+
+    #mobile-dots {
+        display: block;
+    }
+
+    .item {
+        flex-direction: column-reverse;
+    }
+
+    .banner-left,
+    .banner-right {
+        width: 100%;
+    }
+
+    .banner-text {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .banner-heading {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .banner-img {
+        max-width: 80% !important;
+        margin: 0 auto;
+    }
+
+}
+
+/* mobile device responsive  */
+
+@media only screen and (max-width: 600px) {
+    .section-padding {
+        padding: 60px 10px;
+    }
+
+    .item {
+        flex-direction: column-reverse;
+    }
+
+    .banner-left,
+    .banner-right {
+        width: 100%;
+    }
+
+    .banner-text {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .banner-heading {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .banner-img {
+        max-width: 70% !important;
+        margin: 0 auto;
+    }
+
+}

@@ -4,60 +4,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Future Innovation - Home</title>
+    <link rel="shortcut icon" href="./assets/images/icons/company-icon.png" type="image/x-icon">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.3/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-
-    <style>
-        .owl-item {
-            height: 80vh;
-        }
-
-        .owl-item:nth-child(odd) {
-            background-color: brown;
-        }
-
-        .owl-dots .owl-dot {
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            background-color: red !important;
-            margin: 0 5px;
-        }
-    </style>
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="custom-container">
-            <nav></nav>
-            <section class="section section-padding">
+        <nav class="navbar">
+            <div class="custom-container nav-inner">
+                <img src="./assets/images/logo.png" alt="nav logo">
+                <a href="#" class="login-btn">Login</a>
+            </div>
+        </nav>
+        <div class="banner-section">
+            <section class=" custom-container section section-padding">
+                <!-- Slider code Start here -->
                 <div class="owl-carousel" id="carousel">
-                    <div class="item">
-                        <h4>1</h4>
+                    <!-- banner slider 1  -->
+                    <div class="item banner-item">
+                        <div class="banner-left">
+                            <p class="banner-text">Smile-Centered Design</p>
+                            <h1 class="banner-heading"><span class="banner-text-blue">Creative</span> Magic</h1>
+                            <h1 class="banner-heading">Apps & Websites</h1>
+                        </div>
+                        <div class="banner-right">
+                            <img src="./assets/images/graphics-design.png" alt="banner image" class="banner-img">
+                        </div>
                     </div>
-                    <div class="item">
-                        <h4>2</h4>
+                    <!-- banner slider 2  -->
+                    <div class="item banner-item">
+                        <div class="banner-left">
+                            <p class="banner-text">Smile-Centered Design</p>
+                            <h1 class="banner-heading"><span class="banner-text-blue">We make</span> apps,</h1>
+                            <h1 class="banner-heading">websites and brands</h1>
+                        </div>
+                        <div class="banner-right">
+                            <img src="./assets/images/web-design.png" alt="banner image" class="banner-img">
+                        </div>
+                    </div>
+                    <!-- banner slider 3  -->
+                    <div class="item banner-item">
+                        <div class="banner-left">
+                            <p class="banner-text">User Happiness First</p>
+                            <h1 class="banner-heading"><span class="banner-text-blue">Custom</span> Development</h1>
+                            <h1 class="banner-heading">Apps & Sites</h1>
+                        </div>
+                        <div class="banner-right">
+                            <img src="./assets/images/web-dev.png" alt="banner image" class="banner-img">
+                        </div>
+                    </div>
+                    <!-- banner slider 4  -->
+                    <div class="item banner-item">
+                        <div class="banner-left">
+                            <p class="banner-text">Happy Users, Strong Campaigns</p>
+                            <h1 class="banner-heading"><span class="banner-text-blue">Driving</span> Growth</h1>
+                            <h1 class="banner-heading">Apps, Web & Brands</h1>
+                        </div>
+                        <div class="banner-right">
+                            <img src="./assets/images/digital-marketing.png" alt="banner image" class="banner-img">
+                        </div>
+                    </div>
+                    <!-- banner slider 5  -->
+                    <div class="item banner-item">
+                        <div class="banner-left">
+                            <p class="banner-text">Happy Users, Stunning Designs</p>
+                            <h1 class="banner-heading"><span class="banner-text-blue">Transforming</span> Apps,</h1>
+                            <h1 class="banner-heading">UI/UX Mastery</h1>
+
+                        </div>
+                        <div class="banner-right">
+                            <img src="./assets/images/ui-ux.png" alt="banner image" class="banner-img">
+                        </div>
                     </div>
                 </div>
+                <!-- Slider code end -->
 
-            </section>
+                <!-- Custom dots css code Start -->
+                <div class="custom-dot-wrapper desktop-code">
+                    <div class="single-dots-item active">
+                        <div class="polygon">
+                            <img class="default" src="./assets/images/polygon-bg.png" alt="">
+                            <img class="activeState" src="./assets/images/polygon-bg-active.png" alt="">
+                        </div>
+                        <div class="dot-content-wrap text-center">
+                            <img class="dot-icon" src="./assets/images/icons/graphics.svg" alt="Graphic design">
+                            <p class="dot-title graphics-title">Graphic Design</p>
+                        </div>
+                    </div>
+                    <div class="single-dots-item">
+                        <div class="polygon">
+                            <img class="default" src="./assets/images/polygon-bg.png" alt="">
+                            <img class="activeState" src="./assets/images/polygon-bg-active.png" alt="">
+                        </div>
+                        <div class="dot-content-wrap text-center">
+                            <img class="dot-icon" src="./assets/images/icons/web-design.svg" alt="Graphic design">
+                            <p class="dot-title webdesign-title">Web Design</p>
+                        </div>
+                    </div>
+                    <div class="single-dots-item">
+                        <div class="polygon">
+                            <img class="default" src="./assets/images/polygon-bg.png" alt="">
+                            <img class="activeState" src="./assets/images/polygon-bg-active.png" alt="">
+                        </div>
+                        <div class="dot-content-wrap text-center">
+                            <img class="dot-icon" src="./assets/images/icons/web-dev.svg" alt="Graphic design">
+                            <p class="dot-title webdev-title">Web Development</p>
+                        </div>
+                    </div>
+                    <div class="single-dots-item">
+                        <div class="polygon">
+                            <img class="default" src="./assets/images/polygon-bg.png" alt="">
+                            <img class="activeState" src="./assets/images/polygon-bg-active.png" alt="">
+                        </div>
+                        <div class="dot-content-wrap text-center">
+                            <img class="dot-icon" src="./assets/images/icons/digital.svg" alt="Graphic design">
+                            <p class="dot-title digital-title">Digital Marketing</p>
+                        </div>
+                    </div>
+                    <div class="single-dots-item">
+                        <div class="polygon">
+                            <img class="default" src="./assets/images/polygon-bg.png" alt="">
+                            <img class="activeState" src="./assets/images/polygon-bg-active.png" alt="">
+                        </div>
+                        <div class="dot-content-wrap text-center">
+                            <img class="dot-icon" src="./assets/images/icons/uiux.svg" alt="Graphic design">
+                            <p class="dot-title uiux-title">UI/UX Design</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Custom dots css code End -->
+
+                <div class="custom-dot-wrapper owl-carousel" id="mobile-dots">
+                    <div class="single-dots-item active">
+                        <div class="polygon">
+                            <img class="default" src="./assets/images/polygon-bg.png" alt="">
+                            <img class="activeState" src="./assets/images/polygon-bg-active.png" alt="">
+                        </div>
+                        <div class="dot-content-wrap text-center">
+                            <img class="dot-icon" src="./assets/images/icons/graphics.svg" alt="Graphic design">
+                            <p class="dot-title graphics-title">Graphic Design</p>
+                        </div>
+                    </div>
+                    <div class="single-dots-item">
+                        <div class="polygon">
+                            <img class="default" src="./assets/images/polygon-bg.png" alt="">
+                            <img class="activeState" src="./assets/images/polygon-bg-active.png" alt="">
+                        </div>
+                        <div class="dot-content-wrap text-center">
+                            <img class="dot-icon" src="./assets/images/icons/web-design.svg" alt="Graphic design">
+                            <p class="dot-title webdesign-title">Web Design</p>
+                        </div>
+                    </div>
+                    <div class="single-dots-item">
+                        <div class="polygon">
+                            <img class="default" src="./assets/images/polygon-bg.png" alt="">
+                            <img class="activeState" src="./assets/images/polygon-bg-active.png" alt="">
+                        </div>
+                        <div class="dot-content-wrap text-center">
+                            <img class="dot-icon" src="./assets/images/icons/web-dev.svg" alt="Graphic design">
+                            <p class="dot-title webdev-title">Web Development</p>
+                        </div>
+                    </div>
+                    <div class="single-dots-item">
+                        <div class="polygon">
+                            <img class="default" src="./assets/images/polygon-bg.png" alt="">
+                            <img class="activeState" src="./assets/images/polygon-bg-active.png" alt="">
+                        </div>
+                        <div class="dot-content-wrap text-center">
+                            <img class="dot-icon" src="./assets/images/icons/digital.svg" alt="Graphic design">
+                            <p class="dot-title digital-title">Digital Marketing</p>
+                        </div>
+                    </div>
+                    <div class="single-dots-item">
+                        <div class="polygon">
+                            <img class="default" src="./assets/images/polygon-bg.png" alt="">
+                            <img class="activeState" src="./assets/images/polygon-bg-active.png" alt="">
+                        </div>
+                        <div class="dot-content-wrap text-center">
+                            <img class="dot-icon" src="./assets/images/icons/uiux.svg" alt="Graphic design">
+                            <p class="dot-title uiux-title">UI/UX Design</p>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- end of section -->
         </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.3/owl.carousel.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#carousel').owlCarousel({
-                items: 1,
-                nav: false,
-                autoplay: true,
-                autoplayTimeout: 5500,
-                dots: true,
-            })
-        });
-    </script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
